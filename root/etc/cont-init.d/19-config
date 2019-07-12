@@ -1,8 +1,7 @@
 #!/usr/bin/with-contenv bash
 
 if [ "${SKIP_SSL,,}" = true ]; then
-  envsubst < defaults/default.http > defaults/default
+  envsubst '${ADMIN_USER} ${ADMIN_PASS} ${ADMIN_AUTH}' < /defaults/default.http > /defaults/default
 else
-  envsubst < defaults/default.https > defaults/default
+  envsubst '${ADMIN_USER} ${ADMIN_PASS} ${ADMIN_AUTH}' < /defaults/default.https > /defaults/default
 fi
-
