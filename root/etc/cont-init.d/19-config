@@ -5,3 +5,5 @@ if [ "${SKIP_SSL,,}" = true ]; then
 else
   mv defaults/default.https defaults/default
 fi
+
+envsubst < /defaults/default > /defaults/default
