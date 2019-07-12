@@ -10,6 +10,7 @@ ARG ARIA2_VERSION
 
 ENV ARIA2WEBUI_VERSION fb9d758d5cdc2be0867ee9502c44fd17560f5d24
 ENV ARIA2_VERSION 1.34.0-r1
+ENV ADMIN_AUTH=off
 
 RUN \
     apk add --no-cache tar curl openssl aria2=${ARIA2_VERSION} && \

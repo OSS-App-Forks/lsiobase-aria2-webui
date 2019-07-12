@@ -17,7 +17,8 @@ chown -R abc:abc \
          /data/aria2c-webui \
          /data/config \
          /data/downloads \
-         /data/config/aria2.session
+         /data/config/aria2.session \
+         /etc/conf/htpasswd
 
 chown -R abc:abc  \
         /var/lib/nginx
