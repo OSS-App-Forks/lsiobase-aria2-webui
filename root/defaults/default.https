@@ -8,7 +8,7 @@ server {
   auth_basic_user_file /etc/conf/htpasswd;
 
   location / {
-    auth_basic $ADMIN_AUTH;
+    auth_basic ${ADMIN_AUTH};
     root /data/aria2c-webui;
   }
 
